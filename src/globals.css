@@ -1,0 +1,64 @@
+:root {
+  --color-primary: #4A6D8C; /* Calm Ocean Blue – main accent color */
+  --color-secondary: #7BA2C0; /* Light Steel Blue – hover/gradient accent */
+  --color-accent-dark: #2F4559; /* Deep Slate Blue – background tone */
+  --color-accent-light: #E4EBF2; /* Misty Grey Blue – light contrast */
+  --color-skin-tone: #AFC4D4; /* Soft Aqua Grey – subtle highlight tone */
+  --color-ring: rgba(122, 163, 201, 0.4); /* Soft blue glow for focus ring */
+}
+
+/* Text Colors */
+.text-primary {
+  color: var(--color-primary) !important;
+}
+
+.text-primary-hover:hover {
+  color: var(--color-secondary) !important;
+}
+
+/* Background Colors */
+.bg-primary {
+  background-color: var(--color-primary) !important;
+}
+
+.bg-secondary {
+  background-color: var(--color-secondary) !important;
+}
+
+.bg-accent-dark {
+  background-color: var(--color-accent-dark) !important;
+}
+
+.bg-accent-light {
+  background-color: var(--color-accent-light) !important;
+}
+
+/* Hover Effects */
+.bg-primary-hover:hover {
+  background-color: var(--color-secondary) !important;
+}
+
+.bg-secondary-hover:hover {
+  background-color: var(--color-primary) !important;
+}
+
+/* Borders */
+.border-primary {
+  border: 2px solid var(--color-primary) !important;
+}
+
+.border-primary-hover:hover {
+  border: 2px solid var(--color-secondary) !important;
+}
+
+/* Icons / SVG Fills */
+.fill-primary {
+  fill: var(--color-primary) !important;
+}
+
+/* Focus Ring */
+.focus-ring:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px var(--color-ring);
+  border-radius: 0.375rem; /* matches Tailwind rounded-md */
+}
